@@ -28,7 +28,8 @@
     "microbundle:develop": "npm run microbundle:production -- --no-compress --watch",
     "release": "release-it",
     "test": "jest --ci --no-cache",
-    "test:coverage": "jest --ci --no-cahce --coverage"
+    "test:coverage": "jest --ci --no-cahce --coverage",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "react": "^16.x || ^17.x || ^18.x || ^19.x"
