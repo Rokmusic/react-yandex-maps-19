@@ -1,84 +1,110 @@
-## Fork / React 19 development
+React Yandex Maps 19
 
-This repository is based on the original
-https://github.com/R1ZEN/react-yandex-maps
+React bindings for Yandex Maps API with experimental React 19 support. Fork
 
-Original npm package: https://www.npmjs.com/package/@pbe/react-yandex-maps
+This repository is based on the original project:
 
-This repository contains experimental changes for React 19 compatibility and
-testing.
+    Original repository: https://github.com/R1ZEN/react-yandex-maps
 
-Original project: R1ZEN/react-yandex-maps Fork: rokmusic/react-yandex-maps
+    Original npm package: https://www.npmjs.com/package/@pbe/react-yandex-maps
 
-# React Yandex Maps
+    React 19 fork: https://github.com/Rokmusic/react-yandex-maps-19
 
-[![npm](https://img.shields.io/npm/v/@pbe/react-yandex-maps)](https://www.npmjs.com/package/@pbe/react-yandex-maps)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@pbe/react-yandex-maps)](https://bundlephobia.com/package/@pbe/react-yandex-maps)
+The original source code and project structure are preserved as the basis of
+this fork.
 
-[Yandex Maps API][ymaps-api] bindings for React
+This fork contains experimental changes focused on React 19 compatibility and
+testing. React 19
 
-[ymaps-api]:
-  https://tech.yandex.com/maps/doc/jsapi/2.1/quick-start/index-docpage/
+This fork uses:
 
-### Features
+    React 19.2.8
 
-- Supports TypeScript out of the box
-- Automatic yamps api and modules loading
-- Declarative rendering
+    React DOM 19.2.8
 
-### Installation
+    React Test Renderer 19.2.8
 
-npm:
+The existing test suite has been successfully run with React 19. Installation
 
-```
-npm install @pbe/react-yandex-maps
-```
+Install this React 19 fork directly from GitHub:
 
-yarn:
+npm install git+https://github.com/Rokmusic/react-yandex-maps-19.git
 
-```
-yarn add @pbe/react-yandex-maps
-```
+The package name remains:
 
-### Getting Started
+@pbe/react-yandex-maps
 
-Try running a simple example:
+After installation, import the package normally:
 
-```jsx
-import React from 'react';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
-export default function App() {
-  const defaultState = {
-    center: [55.751574, 37.573856],
-    zoom: 5,
-  };
+Getting Started
 
-  return (
-    <YMaps>
-      <Map defaultState={defaultState}>
-        <Placemark geometry={[55.684758, 37.738521]} />
-      </Map>
-    </YMaps>
-  );
-}
-```
+import React from 'react'; import { YMaps, Map, Placemark } from
+'@pbe/react-yandex-maps';
 
-### Documentation
+export default function App() { const defaultState = { center: [55.751574,
+37.573856], zoom: 5, };
 
-The React Yandex Maps docs are located at
-[website](https://pbe-react-yandex-maps.vercel.app)
+return ( <YMaps> <Map defaultState={defaultState}> <Placemark
+geometry={[55.684758, 37.738521]} /> </Map> </YMaps> ); }
 
-- [Getting Started](https://pbe-react-yandex-maps.vercel.app/)
-- [Core Principles](https://pbe-react-yandex-maps.vercel.app/core-principles/)
-- [API Reference](https://pbe-react-yandex-maps.vercel.app/category/api-reference/)
+Development
 
-### Contribution
+Install dependencies:
 
-We appreciate your help!
+npm install
 
-To contribute, please read our [contributing instructions](./CONTRIBUTING.md).
+Run tests:
 
-### License
+npm test
 
-[MIT](./LICENSE)
+Run TypeScript checks:
+
+npm run typecheck
+
+Build the package:
+
+npm run build
+
+Testing
+
+The project currently uses React 19 and React Test Renderer 19.
+
+Test command:
+
+npm test
+
+Current test suite:
+
+    9 test suites
+
+    75 tests
+
+    React 19.2.8
+
+Original Project
+
+This project is based on:
+
+https://github.com/R1ZEN/react-yandex-maps
+
+Original package:
+
+https://www.npmjs.com/package/@pbe/react-yandex-maps
+
+Original documentation:
+
+https://pbe-react-yandex-maps.vercel.app/ Documentation
+
+    Getting Started: https://pbe-react-yandex-maps.vercel.app/
+
+    Core Principles: https://pbe-react-yandex-maps.vercel.app/core-principles/
+
+    API Reference: https://pbe-react-yandex-maps.vercel.app/category/api-reference/
+
+License
+
+MIT
+
+This fork retains the MIT license of the original project.
