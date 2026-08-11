@@ -1,3 +1,15 @@
+## Fork / React 19 development
+
+This repository is based on the original
+https://github.com/R1ZEN/react-yandex-maps
+
+Original npm package: https://www.npmjs.com/package/@pbe/react-yandex-maps
+
+This repository contains experimental changes for React 19 compatibility and
+testing.
+
+Original project: R1ZEN/react-yandex-maps Fork: rokmusic/react-yandex-maps
+
 # React Yandex Maps
 
 [![npm](https://img.shields.io/npm/v/@pbe/react-yandex-maps)](https://www.npmjs.com/package/@pbe/react-yandex-maps)
